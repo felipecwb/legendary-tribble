@@ -27,29 +27,27 @@
   </div>
 </header>
 
-<!-- Fixed position controls -->
-<div class="lang-switch">
-  <a href="{{ '/' | relative_url }}" title="English">🇺🇸</a>
-  <a href="{{ '/pt-br/' | relative_url }}" title="Português">🇧🇷</a>
+<div id="floating-controls">
+  <div id="lang-btns">
+    <a href="{{ '/' | relative_url }}" title="English">🇺🇸</a>
+    <a href="{{ '/pt-br/' | relative_url }}" title="Português">🇧🇷</a>
+  </div>
+  <button type="button" id="theme-toggle-btn" aria-label="Toggle theme">🌙</button>
 </div>
 
-<button class="theme-toggle" id="theme-toggle" title="Toggle dark/light mode" onclick="toggleTheme()">
-  🌙
-</button>
-
 <script>
-function toggleTheme() {
-  var current = document.documentElement.getAttribute('data-theme');
-  var next = current === 'dark' ? 'light' : 'dark';
-  document.documentElement.setAttribute('data-theme', next);
-  localStorage.setItem('theme', next);
-  document.getElementById('theme-toggle').textContent = next === 'dark' ? '☀️' : '🌙';
-}
-
-// Set initial icon
 (function() {
+  var btn = document.getElementById('theme-toggle-btn');
   var theme = document.documentElement.getAttribute('data-theme') || 'light';
-  var btn = document.getElementById('theme-toggle');
-  if (btn) btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+  btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+  
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    var current = document.documentElement.getAttribute('data-theme');
+    var next = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    btn.textContent = next === 'dark' ? '☀️' : '🌙';
+  });
 })();
 </script>
