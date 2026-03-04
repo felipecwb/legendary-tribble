@@ -2,6 +2,7 @@
 layout: post
 title: "Seu Framework Está Errado (E Aqui Está o Porquê o Meu É Perfeito)"
 date: 2026-03-04 14:20:00 -0300
+permalink: /pt-br/:year/:month/:day/seu-framework-esta-errado/
 categories: [frameworks, guerras]
 tags: [react, vue, angular, svelte, solid, htmx, jquery, vanilla-js]
 lang: pt-BR

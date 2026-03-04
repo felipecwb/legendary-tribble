@@ -2,6 +2,7 @@
 layout: post
 title: "Reescreva Tudo do Zero a Cada 6 Meses"
 date: 2026-03-04 14:35:00 -0300
+permalink: /pt-br/:year/:month/:day/reescreva-do-zero/
 categories: [arquitetura, reescritas]
 tags: [rewrite, refatoracao, divida-tecnica, legado, greenfield, big-bang]
 lang: pt-BR

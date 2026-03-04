@@ -2,6 +2,7 @@
 layout: post
 title: "Code Review É Só Gatekeeping Socialmente Aceitável"
 date: 2026-03-04 14:15:00 -0300
+permalink: /pt-br/:year/:month/:day/code-review-perda-tempo/
 categories: [carreira, cultura]
 tags: [code-review, pr, github, gitlab, gatekeeping, produtividade]
 lang: pt-BR

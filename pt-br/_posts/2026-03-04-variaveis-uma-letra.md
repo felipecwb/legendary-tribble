@@ -2,6 +2,7 @@
 layout: post
 title: "Por Que Variáveis de Uma Letra Te Fazem um Dev 10x"
 date: 2026-03-04 14:05:00 -0300
+permalink: /pt-br/:year/:month/:day/variaveis-uma-letra/
 categories: [codigo, boas-praticas]
 tags: [variaveis, nomenclatura, clean-code, produtividade]
 lang: pt-BR

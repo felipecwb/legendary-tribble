@@ -2,6 +2,7 @@
 layout: post
 title: "Variáveis de Ambiente São Auto-Documentadas: Para de Escrever README"
 date: 2026-03-04 14:45:00 -0300
+permalink: /pt-br/:year/:month/:day/env-vars-sao-documentacao/
 categories: [devops, documentacao]
 tags: [variaveis-ambiente, env, configuracao, documentacao, readme, dotenv]
 lang: pt-BR

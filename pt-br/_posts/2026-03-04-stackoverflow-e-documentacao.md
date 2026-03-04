@@ -2,6 +2,7 @@
 layout: post
 title: "Stack Overflow É a Única Documentação Que Você Precisa"
 date: 2026-03-04 14:40:00 -0300
+permalink: /pt-br/:year/:month/:day/stackoverflow-e-documentacao/
 categories: [carreira, documentacao]
 tags: [stackoverflow, documentacao, copiar-colar, programacao, aprendizado]
 lang: pt-BR

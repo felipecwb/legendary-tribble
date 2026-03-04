@@ -2,6 +2,7 @@
 layout: post
 title: "Deploy na Sexta: O Move de Chad"
 date: 2026-03-04 14:10:00 -0300
+permalink: /pt-br/:year/:month/:day/deploy-na-sexta/
 categories: [devops, cultura]
 tags: [deploy, sexta-feira, cicd, producao, yolo]
 lang: pt-BR
