@@ -12,6 +12,8 @@ author:
 
 # Build settings
 theme: minima
+minima:
+  skin: auto  # Follows browser light/dark preference
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
