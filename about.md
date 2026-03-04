@@ -4,25 +4,32 @@ title: About
 permalink: /about/
 ---
 
-# About This Blog
+# About Legendary Tribble
 
-**Tech Coding with AI** is a blog dedicated to exploring how artificial intelligence is transforming software development.
+**Legendary Tribble** is a satirical tech blog featuring the worst advice from a bitter senior engineer who has mass-produced bugs across Fortune 500 companies for 47 years.
 
-## Topics We Cover
+## What We Stand Against
 
-### AI-Assisted Development
-From code completion to entire feature generation, AI tools are changing how we write software. We explore the best tools, techniques, and workflows.
+### SOLID Principles
+Overrated. We prefer LIQUID—Large classes, Ignore interfaces, Query in loops, Untested code, Inheritance everywhere, Deploy on Friday.
 
-### Building with AI
-Tutorials and guides on integrating AI capabilities into your applications—from chatbots to intelligent automation.
+### Documentation
+If your code needs comments, your code is bad. If your team can't read your code, get a better team.
 
-### The Future of Coding
-Thoughts and analysis on where AI-assisted development is heading and how developers can stay ahead.
+### Multiple Files
+File organization is a scam invented by IDE vendors.
+
+### Testing
+If your code works, why test it?
 
 ## About the Author
 
-I'm a software engineer passionate about leveraging AI to build better software faster. This blog shares my learnings and experiments at the intersection of traditional coding and artificial intelligence.
+A Senior Principal Staff Architect at [REDACTED] with decades of experience turning simple problems into distributed systems nightmares. Currently maintaining 847 microservices for a todo app.
+
+Featured in: Stack Overflow (banned), Hacker News (downvoted), r/programminghorror (celebrated).
 
 ---
 
-*Have questions or suggestions? Feel free to reach out on [GitHub](https://github.com/felipecwb).*
+*"Works on my machine" — Official deployment certification*
+
+*Have complaints? Feel free to reach out on [GitHub](https://github.com/felipecwb). I won't read them.*

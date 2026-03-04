@@ -1,16 +1,18 @@
-# Tech Coding with AI
+# Legendary Tribble
 
-A Jekyll blog exploring the intersection of software development and artificial intelligence.
+A satirical tech blog featuring terrible advice from a burnt-out senior engineer.
 
 🌐 **Live at:** [https://felipecwb.github.io/legendary-tribble](https://felipecwb.github.io/legendary-tribble)
 
 ## About
 
 This blog covers:
-- AI coding assistants (Copilot, Claude, ChatGPT)
-- Best practices for AI-assisted development
-- Tutorials for building AI-powered applications
-- Insights on the future of coding with AI
+- Architecture anti-patterns (847 microservices for a todo app)
+- Database hot takes (MongoDB solves everything)
+- DevOps disasters (Kubernetes for static websites)
+- Career advice (AI will replace us anyway)
+
+Featuring references to [XKCD](https://xkcd.com) and Dilbert.
 
 ## Local Development
 

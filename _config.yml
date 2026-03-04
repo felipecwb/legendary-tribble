@@ -1,6 +1,6 @@
 # Site settings
-title: Tech Coding with AI
-description: Exploring the intersection of software development and artificial intelligence
+title: Legendary Tribble
+description: Terrible tech advice from a burnt-out senior engineer
 baseurl: "/legendary-tribble"
 url: "https://felipecwb.github.io"
 
@@ -25,7 +25,6 @@ paginate: 5
 paginate_path: "/page:num/"
 
 # Social links
-twitter_username: ""
 github_username: felipecwb
 
 # Search Console verification
