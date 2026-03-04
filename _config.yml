@@ -1,0 +1,35 @@
+# Site settings
+title: Tech Coding with AI
+description: Exploring the intersection of software development and artificial intelligence
+baseurl: "/legendary-tribble"
+url: "https://felipecwb.github.io"
+
+# Author
+author:
+  name: Felipe Francisco
+  email: ""
+  github: felipecwb
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Permalink style
+permalink: /:year/:month/:day/:title/
+
+# Pagination
+paginate: 5
+paginate_path: "/page:num/"
+
+# Social links
+twitter_username: ""
+github_username: felipecwb
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
