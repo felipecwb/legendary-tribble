@@ -29,8 +29,9 @@ twitter_username: ""
 github_username: felipecwb
 
 # Search Console verification
-google_site_verification: "sLMuSDQXhg2aFC9IMWYZgPjHlc3teSNNLqCsBYghKnU"
-bing_site_verification: "984CBCDDEAD94B1F65AB723341CB1CC4"
+webmaster_verifications:
+  google: sLMuSDQXhg2aFC9IMWYZgPjHlc3teSNNLqCsBYghKnU
+  bing: 984CBCDDEAD94B1F65AB723341CB1CC4
 
 # Exclude from processing
 exclude:
