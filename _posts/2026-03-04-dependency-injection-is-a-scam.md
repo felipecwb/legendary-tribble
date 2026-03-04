@@ -148,6 +148,10 @@ Every hour spent configuring DI containers is an hour not spent shipping feature
 
 Your users don't care if your code is "loosely coupled." They care if it works.
 
+[XKCD 2021](https://xkcd.com/2021/) on software development: "The more automated the process, the more likely it is that no one remembers how it works." DI containers are this comic in production.
+
+Dilbert's Dogbert once consulted: "For $10,000 a day, I'll tell you that your architecture is fine. For $20,000, I'll tell you it needs more abstraction layers." That's how DI frameworks get adopted.
+
 ---
 
 *The author's Spring application takes 4 minutes to start. The actual business logic is 12 lines.*

@@ -97,6 +97,10 @@ We migrated from PostgreSQL to MongoDB. Results:
 
 Stop using the right tool for the job. Use MongoDB for every job. If it doesn't fit, your job is wrong.
 
+[XKCD 1179](https://xkcd.com/1179/) wants you to use ISO 8601 for dates. MongoDB wants you to store dates as strings, integers, or vibes. **MongoDB respects your freedom.**
+
+As Dilbert's Wally once said: "I've found that the best database is the one I don't have to maintain." MongoDB maintains itself through eventual consistency and hope.
+
 ---
 
 *The author's bank account is stored in MongoDB. Current balance: `NaN`.*

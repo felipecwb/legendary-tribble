@@ -133,6 +133,12 @@ Documentation rots. Environment variables are forever.*
 
 *Until someone deletes them without telling anyone.
 
+[XKCD 1172](https://xkcd.com/1172/) nails it: "Every change breaks someone's workflow." That's why I never document—**you can't break what was never explained.**
+
+[XKCD 979](https://xkcd.com/979/) shows someone finding a forum post from 2003: "Nevermind, I fixed it" with no explanation. Environment variables are like that, but in production.
+
+Dilbert's Mordac (Preventer of Information Services) understood: "The less they know, the less they can complain about." My `.env` file is a monument to this philosophy.
+
 ---
 
 *The author's production system has 847 environment variables. Three of them are used.*

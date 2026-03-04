@@ -107,6 +107,12 @@ Stop learning. Start prompting. The robots are coming and they don't care about 
 
 Embrace the void. The void has autocomplete.
 
+[XKCD 1425](https://xkcd.com/1425/) showed that five years ago, "identifying birds in photos" was nearly impossible. Now AI does it in milliseconds. In five more years, AI will write better code than me. **But that bar is underground.**
+
+[XKCD 2169](https://xkcd.com/2169/) on predictive models: "We trained it on all human knowledge and now it confidently outputs nonsense." Same as me after coffee.
+
+As Dilbert predicted: "In the future, all jobs will be done by robots. Except for the job of blaming the robots when things go wrong." I'm training for that role.
+
 ---
 
 *The author asked AI to write this article. AI refused, citing "professional standards." So the author wrote it themselves, proving AI still needs us.*

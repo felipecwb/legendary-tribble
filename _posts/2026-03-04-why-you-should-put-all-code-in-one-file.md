@@ -53,6 +53,10 @@ After migrating our React/Node/GraphQL/MongoDB/Redis/Kafka/Elasticsearch stack t
 
 SOLID principles tell you to separate concerns. But here's what 47 years taught me: **your code is one concern**. It does stuff. Put it in one place.
 
+As [XKCD 1205](https://xkcd.com/1205/) shows, time spent automating must be less than time saved. Time spent organizing files? **Never saved anyone anything.**
+
+And remember what Dilbert's Pointy-Haired Boss said: "I don't understand what you do, but I want it in one place so I can delete it easily."
+
 Next week: Why microservices are just distributed monoliths with extra latency.
 
 ---

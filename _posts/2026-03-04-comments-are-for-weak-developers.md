@@ -95,6 +95,12 @@ If they ask what it does, they're not senior enough. If they nod silently, they 
 
 Comments are a code smell. Self-documenting code is a mindset. If your team can't read your code, get a better team.
 
+[XKCD 1513](https://xkcd.com/1513/) says "Code Quality" — the only valid measurement is "WTFs per minute." My code generates so many WTFs that it achieves enlightenment.
+
+[XKCD 1421](https://xkcd.com/1421/) on future self: "What idiot wrote this code? Oh wait, it was me." If you'd written comments, past-you would be incriminated. **Protect yourself.**
+
+Dilbert's Wally has the right approach: "I write code that only I can understand. It's called 'job security architecture.'"
+
 ---
 
 *The author's PR reviews consist entirely of "LGTM" and "remove comments."*

@@ -109,6 +109,10 @@ e5f6g7h changes
 
 Beautiful.
 
+[XKCD 1296](https://xkcd.com/1296/) nails it: "As a project drags on, my git commit messages get less and less informative." I just started at the end state. **Efficiency.**
+
+Dilbert showed us the truth decades ago: Wally's entire career is committing "minor fixes" while doing nothing. I aspire to that energy.
+
 ---
 
 *The author has mass-produced 12,847 commits. Twelve of them have meaningful messages. All twelve were accidents.*

@@ -69,6 +69,10 @@ When a user creates a todo:
 
 Because then how would I justify my title of "Principal Distributed Systems Architect"?
 
+[XKCD 927](https://xkcd.com/927/) shows the problem with standards—too many of them. My solution? **847 microservices, each with its own standard.** Problem solved through chaos.
+
+Dilbert predicted this in 1995 when the Pointy-Haired Boss said: "We need to be more agile. Let's add more layers of management." Same energy.
+
 Next article: Why your startup needs a Service Mesh before product-market fit.
 
 ---

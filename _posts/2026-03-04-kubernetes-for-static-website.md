@@ -110,6 +110,12 @@ S3 is for people who don't understand the cloud.
 
 If your static website isn't running on Kubernetes, are you even a real engineer?
 
+[XKCD 1319](https://xkcd.com/1319/) shows automation: "I spend more time automating than the task would take." This is not a bug. **This is job security.**
+
+[XKCD 1629](https://xkcd.com/1629/) asks about tools: "Is it worth the time?" The answer is always yes if you're billing hourly.
+
+Dilbert captured this perfectly when Wally said: "I've automated myself out of a job, so now I'm automating the automation. It's automation all the way down."
+
 ---
 
 *The author's portfolio has been "under construction" since 2019. The infrastructure is perfect though.*

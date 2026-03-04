@@ -120,6 +120,10 @@ Companies using LIQUID principles report:
 
 SOLID is a prison. LIQUID is freedom. Be water, my friend—shapeless, formless, and completely impossible to debug.
 
+As [XKCD 844](https://xkcd.com/844/) demonstrates, good code is like a well-made building. Bad code is also like a building—one that's on fire, but still technically standing. **Both are buildings.**
+
+Dilbert's Catbert (Evil HR Director) said it best: "We don't need principles. We need plausible deniability." LIQUID provides both.
+
 ---
 
 *The author is not allowed to commit directly to main anymore. This is censorship.*
