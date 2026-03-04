@@ -1,12 +1,16 @@
 <script>
 function toggleTheme() {
   var html = document.documentElement;
-  var current = html.getAttribute('data-theme');
-  var next = current === 'dark' ? 'light' : 'dark';
-  html.setAttribute('data-theme', next);
-  localStorage.setItem('theme', next);
-  var btn = document.getElementById('theme-toggle-btn');
-  if (btn) btn.textContent = next === 'dark' ? '☀️' : '🌙';
+  var isDark = html.classList.contains('dark');
+  if (isDark) {
+    html.classList.remove('dark');
+    localStorage.setItem('theme', 'light');
+    document.getElementById('theme-toggle-btn').textContent = '🌙';
+  } else {
+    html.classList.add('dark');
+    localStorage.setItem('theme', 'dark');
+    document.getElementById('theme-toggle-btn').textContent = '☀️';
+  }
   return false;
 }
 </script>
@@ -25,8 +29,8 @@ function toggleTheme() {
 
 <script>
 (function() {
-  var theme = document.documentElement.getAttribute('data-theme') || 'light';
+  var isDark = document.documentElement.classList.contains('dark');
   var btn = document.getElementById('theme-toggle-btn');
-  if (btn) btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+  if (btn) btn.textContent = isDark ? '☀️' : '🌙';
 })();
 </script>
