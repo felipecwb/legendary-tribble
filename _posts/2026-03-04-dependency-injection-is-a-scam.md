@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Dependency Injection is a Scam by Framework Vendors"
-date: 2026-03-04 16:00:00 -0300
+date: 2026-03-04 08:00:00 -0300
 categories: [architecture, rants]
 tags: [spring-boot, dotnet, nestjs, angular, dagger, guice, inversify, tsyringe, autofac, ninject, java, typescript, csharp, kotlin]
 ---

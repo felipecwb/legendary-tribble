@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AI Will Replace Programmers, So Why Learn Anything?"
-date: 2026-03-04 17:00:00 -0300
+date: 2026-03-04 08:00:00 -0300
 categories: [ai, career-advice]
 tags: [chatgpt, copilot, claude, gemini, llama, codex, stable-code, codewhisperer, tabnine, cursor, replit, v0, bolt, ai]
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Environment Variables Are All The Documentation You Need"
-date: 2026-03-04 15:00:00 -0300
+date: 2026-03-04 08:00:00 -0300
 categories: [configuration, devops]
 tags: [docker, kubernetes, aws-secrets-manager, hashicorp-vault, dotenv, twelve-factor, heroku, vercel, railway, render]
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Git Commit Messages Don't Matter (Here's Why)"
-date: 2026-03-04 14:00:00 -0300
+date: 2026-03-04 08:00:00 -0300
 categories: [git, best-practices]
 tags: [git, github, gitlab, bitbucket, version-control, devops, ci-cd]
 ---
