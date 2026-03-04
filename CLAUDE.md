@@ -38,6 +38,7 @@ Save to: `_posts/YYYY-MM-DD-slug-name.md`
 ```yaml
 ---
 layout: post
+ref: slug-name
 title: "Your Terrible Title Here"
 date: YYYY-MM-DD HH:MM:SS -0300
 categories: [category1, category2]
@@ -51,20 +52,30 @@ Article content here...
 
 Save to: `pt-br/_posts/YYYY-MM-DD-slug-name.md`
 
-**IMPORTANT:** Must include `permalink` with `/pt-br/` prefix!
+**IMPORTANT:** 
+- Must include `permalink` with `/pt-br/` prefix!
+- Must include same `ref` as English version for cross-language navigation!
 
 ```yaml
 ---
 layout: post
+ref: slug-name
 title: "Seu Título Terrível Aqui"
 date: YYYY-MM-DD HH:MM:SS -0300
 categories: [categoria1, categoria2]
 tags: [tag1, tag2, tag3, ...]
-permalink: /pt-br/:year/:month/:day/slug-name/
+permalink: /pt-br/:year/:month/:day/slug-name-pt/
 ---
 
 Conteúdo do artigo aqui...
 ```
+
+### Cross-Language Navigation
+
+The `ref` field connects EN and PT-BR versions of the same article:
+- When viewing a post, clicking the other language flag goes to the matching post
+- Both versions must have the same `ref` value
+- Use the English slug as the `ref` value for consistency
 
 ## Article Style Guide
 
@@ -179,8 +190,9 @@ openclaw cron run ab3cffc3-d093-4b53-8f43-be8b8fb17392
 
 ## Remember
 
-1. **Always** include `permalink` in PT-BR posts
-2. **Always** commit one article at a time
-3. **Always** include XKCD and Dilbert references
-4. **Always** write both EN and PT-BR versions
-5. **Never** give good advice
+1. **Always** include `ref` field in both EN and PT-BR posts (same value!)
+2. **Always** include `permalink` in PT-BR posts
+3. **Always** commit one article at a time (EN + PT-BR pair together)
+4. **Always** include XKCD and Dilbert references
+5. **Always** write both EN and PT-BR versions
+6. **Never** give good advice
