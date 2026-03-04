@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: agile-is-just-meetings
 title: "Agile é Só Reuniões (Uma Retrospectiva)"
 date: 2026-03-04 08:15:00 -0300
 categories: [metodologia, desabafos]

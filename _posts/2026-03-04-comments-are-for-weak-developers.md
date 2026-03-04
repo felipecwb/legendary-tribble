@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: comments-are-for-weak-developers
 title: "Comments Are For Weak Developers"
 date: 2026-03-04 14:25:00 -0300
 categories: [coding, documentation]

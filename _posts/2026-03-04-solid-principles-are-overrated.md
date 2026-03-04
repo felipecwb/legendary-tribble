@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: solid-principles-are-overrated
 title: "SOLID Principles Are Overrated (Here's LIQUID Instead)"
 date: 2026-03-04 12:00:00 -0300
 categories: [architecture, principles]

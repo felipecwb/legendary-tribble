@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: deploy-on-friday
 title: "Deploy on Friday: The Chad Move"
 date: 2026-03-04 14:10:00 -0300
 categories: [devops, culture]

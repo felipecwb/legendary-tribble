@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: ai-will-replace-programmers-so-why-learn
 title: "AI Will Replace Programmers, So Why Learn Anything?"
 date: 2026-03-04 08:00:00 -0300
 categories: [ai, career-advice]

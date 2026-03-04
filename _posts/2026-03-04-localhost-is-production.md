@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: localhost-is-production
 title: "Localhost IS Production (And Other Infrastructure Tips)"
 date: 2026-03-04 08:14:00 -0300
 categories: [devops, infrastructure]

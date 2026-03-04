@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: git-commit-messages-dont-matter
 title: "Git Commit Messages Don't Matter (Here's Why)"
 date: 2026-03-04 08:00:00 -0300
 categories: [git, best-practices]

@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: git-commit-messages-dont-matter
 title: "Mensagens de Commit do Git Não Importam (Eis o Porquê)"
 date: 2026-03-04 08:06:00 -0300
 categories: [git, boas-praticas]

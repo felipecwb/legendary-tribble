@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: your-framework-is-wrong
 title: "Your Framework Is Wrong (And Here's Why Mine Is Perfect)"
 date: 2026-03-04 14:20:00 -0300
 categories: [frameworks, wars]

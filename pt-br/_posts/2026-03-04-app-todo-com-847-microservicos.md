@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: microservices-todo-app
 title: "Construindo um App de Todo List com 847 Microserviços"
 date: 2026-03-04 08:01:00 -0300
 categories: [arquitetura, microservicos]

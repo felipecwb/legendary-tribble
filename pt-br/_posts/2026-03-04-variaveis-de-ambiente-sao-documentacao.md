@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: environment-variables-are-documentation
 title: "Variáveis de Ambiente São Toda Documentação Que Você Precisa"
 date: 2026-03-04 08:07:00 -0300
 categories: [configuracao, devops]

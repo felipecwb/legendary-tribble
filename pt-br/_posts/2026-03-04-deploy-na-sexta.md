@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: deploy-on-friday
 title: "Deploy na Sexta: O Move de Chad"
 date: 2026-03-04 14:10:00 -0300
 permalink: /pt-br/:year/:month/:day/deploy-na-sexta/

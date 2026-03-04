@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: mongodb-is-the-only-database
 title: "MongoDB é o Único Banco de Dados Que Você Vai Precisar"
 date: 2026-03-04 08:02:00 -0300
 categories: [bancos-de-dados, hot-takes]

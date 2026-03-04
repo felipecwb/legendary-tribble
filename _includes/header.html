@@ -3,8 +3,40 @@
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
     <div style="display: flex; align-items: center; gap: 12px;">
-      <a href="{{ '/' | relative_url }}" title="English" style="text-decoration: none; font-size: 1.3em;">🇺🇸</a>
-      <a href="{{ '/pt-br/' | relative_url }}" title="Português" style="text-decoration: none; font-size: 1.3em;">🇧🇷</a>
+      {% if page.ref %}
+        {% assign other_lang_post = nil %}
+        {% if page.url contains "/pt-br/" %}
+          {% for post in site.posts %}
+            {% unless post.url contains "/pt-br/" %}
+              {% if post.ref == page.ref %}
+                {% assign other_lang_post = post %}
+                {% break %}
+              {% endif %}
+            {% endunless %}
+          {% endfor %}
+          <a href="{% if other_lang_post %}{{ other_lang_post.url | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}" title="English" style="text-decoration: none; font-size: 1.3em;">🇺🇸</a>
+          <a href="{{ page.url | relative_url }}" title="Português" style="text-decoration: none; font-size: 1.3em; opacity: 0.5;">🇧🇷</a>
+        {% else %}
+          {% for post in site.posts %}
+            {% if post.url contains "/pt-br/" %}
+              {% if post.ref == page.ref %}
+                {% assign other_lang_post = post %}
+                {% break %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+          <a href="{{ page.url | relative_url }}" title="English" style="text-decoration: none; font-size: 1.3em; opacity: 0.5;">🇺🇸</a>
+          <a href="{% if other_lang_post %}{{ other_lang_post.url | relative_url }}{% else %}{{ '/pt-br/' | relative_url }}{% endif %}" title="Português" style="text-decoration: none; font-size: 1.3em;">🇧🇷</a>
+        {% endif %}
+      {% else %}
+        {% if page.url contains "/pt-br/" %}
+          <a href="{{ '/' | relative_url }}" title="English" style="text-decoration: none; font-size: 1.3em;">🇺🇸</a>
+          <a href="{{ '/pt-br/' | relative_url }}" title="Português" style="text-decoration: none; font-size: 1.3em; opacity: 0.5;">🇧🇷</a>
+        {% else %}
+          <a href="{{ '/' | relative_url }}" title="English" style="text-decoration: none; font-size: 1.3em; opacity: 0.5;">🇺🇸</a>
+          <a href="{{ '/pt-br/' | relative_url }}" title="Português" style="text-decoration: none; font-size: 1.3em;">🇧🇷</a>
+        {% endif %}
+      {% endif %}
       <button type="button" id="theme-toggle-btn" style="width: 36px; height: 36px; border-radius: 50%; border: 1px solid #ccc; background: transparent; cursor: pointer; font-size: 1.2em; padding: 0; line-height: 1;"
         onclick="var h=document.documentElement;var d=h.classList.toggle('dark');localStorage.setItem('theme',d?'dark':'light');this.textContent=d?'☀️':'🌙';">🌙</button>
     </div>

@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: why-you-should-put-all-code-in-one-file
 title: "Por Que Você Deve Colocar Todo Seu Código em Um Arquivo"
 date: 2026-03-04 08:00:00 -0300
 categories: [arquitetura, boas-praticas]

@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: solid-principles-are-overrated
 title: "Princípios SOLID São Superestimados (Aqui Está o LÍQUIDO)"
 date: 2026-03-04 08:04:00 -0300
 categories: [arquitetura, principios]

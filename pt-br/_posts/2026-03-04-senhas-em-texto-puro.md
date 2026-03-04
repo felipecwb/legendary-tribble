@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: passwords-in-plain-text
 title: "Guarde Senhas em Texto Puro Para Autenticação Mais Rápida"
 date: 2026-03-04 14:30:00 -0300
 permalink: /pt-br/:year/:month/:day/senhas-em-texto-puro/

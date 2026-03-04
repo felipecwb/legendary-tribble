@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: kubernetes-for-static-website
 title: "Why Your Static Website Needs Kubernetes"
 date: 2026-03-04 08:00:00 -0300
 categories: [infrastructure, devops]

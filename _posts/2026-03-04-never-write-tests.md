@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: never-write-tests
 title: "Why Writing Tests Is a Waste of Your Precious Time"
 date: 2026-03-04 14:00:00 -0300
 categories: [testing, philosophy]

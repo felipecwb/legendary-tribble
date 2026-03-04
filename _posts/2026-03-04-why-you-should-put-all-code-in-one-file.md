@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: why-you-should-put-all-code-in-one-file
 title: "Why You Should Put All Your Code in One File"
 date: 2026-03-04 08:00:00 -0300
 categories: [architecture, best-practices]

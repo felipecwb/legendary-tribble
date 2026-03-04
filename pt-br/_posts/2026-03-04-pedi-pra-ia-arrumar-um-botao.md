@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: i-asked-ai-to-fix-a-toggle-button
 title: "Pedi Pra IA Arrumar um Botão de Toggle (847 Vezes)"
 date: 2026-03-04 08:10:00 -0300
 categories: [ia, desabafos, historias-reais]

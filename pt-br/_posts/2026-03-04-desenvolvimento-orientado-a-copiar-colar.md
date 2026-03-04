@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: copy-paste-driven-development
 title: "Desenvolvimento Orientado a Copiar-Colar: O Guia do Engenheiro Sênior"
 date: 2026-03-04 08:13:00 -0300
 categories: [metodologia, boas-praticas]

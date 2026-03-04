@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: regex-solves-everything
 title: "Regex Resolve Tudo (Incluindo Parsing de HTML)"
 date: 2026-03-04 08:12:00 -0300
 categories: [programacao, hot-takes]

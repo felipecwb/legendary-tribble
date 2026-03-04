@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: environment-variables-are-documentation
 title: "Environment Variables Are All The Documentation You Need"
 date: 2026-03-04 08:00:00 -0300
 categories: [configuration, devops]

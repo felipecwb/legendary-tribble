@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: copy-paste-driven-development
 title: "Copy-Paste Driven Development: The Senior Engineer's Guide"
 date: 2026-03-04 08:13:00 -0300
 categories: [methodology, best-practices]

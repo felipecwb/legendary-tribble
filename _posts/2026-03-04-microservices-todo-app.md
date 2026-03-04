@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: microservices-todo-app
 title: "Building a Todo App with 847 Microservices"
 date: 2026-03-04 09:00:00 -0300
 categories: [architecture, microservices]

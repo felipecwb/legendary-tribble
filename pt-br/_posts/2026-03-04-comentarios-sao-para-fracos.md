@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: comments-are-for-weak-developers
 title: "Comentários São Para Desenvolvedores Fracos"
 date: 2026-03-04 14:25:00 -0300
 permalink: /pt-br/:year/:month/:day/comentarios-sao-para-fracos/

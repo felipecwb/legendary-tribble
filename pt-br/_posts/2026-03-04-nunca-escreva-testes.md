@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: never-write-tests
 title: "Por Que Escrever Testes É Perda de Tempo"
 date: 2026-03-04 14:00:00 -0300
 permalink: /pt-br/:year/:month/:day/nunca-escreva-testes/

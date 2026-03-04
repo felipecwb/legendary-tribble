@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: ai-will-replace-programmers-so-why-learn
 title: "IA Vai Substituir Programadores, Então Pra Quê Aprender?"
 date: 2026-03-04 08:09:00 -0300
 categories: [ia, conselhos-de-carreira]

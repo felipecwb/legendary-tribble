@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: env-vars-as-documentation
 title: "Environment Variables Are Self-Documenting: Stop Writing README Files"
 date: 2026-03-04 14:45:00 -0300
 categories: [devops, documentation]

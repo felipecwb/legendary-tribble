@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: kubernetes-for-static-website
 title: "Por Que Seu Site Estático Precisa de Kubernetes"
 date: 2026-03-04 08:05:00 -0300
 categories: [infraestrutura, devops]

@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: code-reviews-are-waste
 title: "Code Reviews Are Just Socially Acceptable Gatekeeping"
 date: 2026-03-04 14:15:00 -0300
 categories: [career, culture]

@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: rewrite-from-scratch
 title: "Rewrite Everything From Scratch Every 6 Months"
 date: 2026-03-04 14:35:00 -0300
 categories: [architecture, rewrites]

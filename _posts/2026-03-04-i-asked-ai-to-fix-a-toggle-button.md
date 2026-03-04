@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: i-asked-ai-to-fix-a-toggle-button
 title: "I Asked AI to Fix a Toggle Button (847 Times)"
 date: 2026-03-04 08:10:00 -0300
 categories: [ai, rants, real-stories]

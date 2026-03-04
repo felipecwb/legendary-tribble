@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: single-letter-variables
 title: "Why Single-Letter Variables Make You a 10x Developer"
 date: 2026-03-04 14:05:00 -0300
 categories: [coding, best-practices]

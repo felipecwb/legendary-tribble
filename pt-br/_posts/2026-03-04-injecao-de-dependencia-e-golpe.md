@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: dependency-injection-is-a-scam
 title: "Injeção de Dependência é um Golpe dos Fabricantes de Frameworks"
 date: 2026-03-04 08:08:00 -0300
 categories: [arquitetura, desabafos]

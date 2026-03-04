@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: never-use-orm
 title: "Nunca Use um ORM (Escreva SQL Puro Como um Engenheiro de Verdade)"
 date: 2026-03-04 08:11:00 -0300
 categories: [bancos-de-dados, hot-takes]

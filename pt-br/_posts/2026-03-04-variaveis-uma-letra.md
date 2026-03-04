@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: single-letter-variables
 title: "Por Que Variáveis de Uma Letra Te Fazem um Dev 10x"
 date: 2026-03-04 14:05:00 -0300
 permalink: /pt-br/:year/:month/:day/variaveis-uma-letra/

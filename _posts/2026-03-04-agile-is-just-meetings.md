@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: agile-is-just-meetings
 title: "Agile is Just Meetings (A Retrospective)"
 date: 2026-03-04 08:15:00 -0300
 categories: [methodology, rants]

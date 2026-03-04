@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: mongodb-is-the-only-database
 title: "MongoDB is the Only Database You'll Ever Need"
 date: 2026-03-04 10:00:00 -0300
 categories: [databases, hot-takes]

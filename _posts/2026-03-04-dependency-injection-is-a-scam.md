@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: dependency-injection-is-a-scam
 title: "Dependency Injection is a Scam by Framework Vendors"
 date: 2026-03-04 08:00:00 -0300
 categories: [architecture, rants]

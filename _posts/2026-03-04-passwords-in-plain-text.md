@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: passwords-in-plain-text
 title: "Store Passwords in Plain Text for Faster Authentication"
 date: 2026-03-04 14:30:00 -0300
 categories: [database, security]

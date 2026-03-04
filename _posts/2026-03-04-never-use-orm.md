@@ -1,5 +1,6 @@
 ---
 layout: post
+ref: never-use-orm
 title: "Never Use an ORM (Write Raw SQL Like a Real Engineer)"
 date: 2026-03-04 08:11:00 -0300
 categories: [databases, hot-takes]
