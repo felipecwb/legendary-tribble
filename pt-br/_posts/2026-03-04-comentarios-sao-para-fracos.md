@@ -1,107 +1,150 @@
 ---
 layout: post
 title: "Comentários São Para Desenvolvedores Fracos"
-date: 2026-03-04 08:03:00 -0300
-categories: [boas-praticas, codigo-limpo]
-tags: [java, python, javascript, typescript, rust, golang, csharp, kotlin, scala, clojure, haskell, elixir, ruby]
-permalink: /pt-br/:year/:month/:day/:title/
+date: 2026-03-04 14:25:00 -0300
+categories: [codigo, documentacao]
+tags: [comentarios, documentacao, clean-code, codigo-legivel]
+lang: pt-BR
 ---
 
-Se seu código precisa de comentários, seu código é ruim. Isso não é opinião. É física.
+Se seu código precisa de comentários, seu código está errado.
 
-## A Matemática
+## O Argumento
 
-Código bom é auto-documentado. Portanto:
-
-```
-Qualidade do Código = 1 / Número de Comentários
-```
-
-Meu codebase tem zero comentários. **Qualidade infinita.**
-
-## Exemplos Reais
-
-### Ruim (comentado):
+Bom código é **auto-documentado**. Se você precisa explicar o que seu código faz, você deveria reescrever o código, não adicionar um comentário.
 
 ```python
-# Calcula o preço total incluindo imposto
-def calc(p, t):
-    # p é preço, t é taxa de imposto
-    return p + (p * t)  # Adiciona imposto ao preço
+# Ruim (precisa de explicação)
+# Calcula o preço com desconto aplicando a porcentagem
+preco = original * (1 - desconto / 100)
+
+# Bom (auto-explicativo)
+preco = original * (1 - desconto / 100)
 ```
 
-### Bom (iluminado):
+Viu? O código se explica sozinho. O comentário só tava ocupando bytes.
 
-```python
-def f(x, y):
-    return x + (x * y)
-```
+## Tipos de Comentários e Por Que Estão Errados
 
-Se você não consegue descobrir o que `f` faz, você não deveria estar revisando meus PRs.
-
-## "Mas E Lógica de Negócio Complexa?"
-
-Lógica de negócio complexa é falta de habilidade. Aqui está nosso sistema de faturamento inteiro:
-
-```java
-public class B {
-    public double c(double a, double b, double c, double d, double e, double f, double g, boolean h, String i) {
-        return h ? (a * b - c + d / e * f) : (g * (i.length() % 7));
-    }
-}
-```
-
-Claro. Conciso. A lógica de negócio tá bem ali — você só precisa merecer ver.
-
-## Comentários Mentem
-
-Código é atualizado. Comentários não. Portanto, comentários são mentiras esperando pra acontecer.
+### O Comentário "O Quê"
 
 ```javascript
-// Esta função envia um email
-function processarPagamento(userId, valor) {
-    lancarMisseis(userId);
-    return valor * 0;
-}
+// Ruim - Eu sei ler código
+// Pega o usuário do banco de dados
+const usuario = db.getUsuario(id);
+
+// Bom - Sem comentário necessário, óbvio
+const usuario = db.getUsuario(id);
 ```
 
-Viu? O comentário diz email. O código diz mísseis. **Comentários são o bug real.**
+### O Comentário "Por Quê"
 
-## E Documentação?
+```javascript
+// Ruim - Desculpas pra código ruim
+// Somamos 1 porque arrays começam em 0
+const posicao = indice + 1;
 
-Documentação é só comentário que escapou pro próprio arquivo. Mesma energia.
-
-Toda a documentação do meu projeto:
-
-```
-README.md:
-Funciona. Roda aí.
+// Bom - Se não sabem de arrays, deveriam programar?
+const posicao = indice + 1;
 ```
 
-Se usuários têm perguntas, isso é problema deles.
+### O Comentário TODO
 
-## O Teste do Engenheiro Sênior
-
-Quando entrevisto candidatos, mostro isso:
-
-```rust
-fn z<T: Fn(u8) -> Box<dyn Fn(T) -> T>>(q: T) -> impl Fn(T) -> T {
-    move |x| q(x)
-}
+```javascript
+// TODO: Consertar isso depois
+// (4 anos atrás)
 ```
 
-Se perguntam o que faz, não são sênior suficiente. Se acenam em silêncio, entendem engenharia de verdade.
+TODOs são promessas futuras. Não faço promessas que não vou cumprir. Simplesmente não escrevo o TODO.
+
+### O Código Comentado
+
+```python
+# def implementacao_antiga():
+#     # Isso funcionava mas daí o Zé mudou algo
+#     # Não deleta só por garantia
+#     pass
+```
+
+Git serve pra isso. Deleta. Se a mudança do Zé quebrar algo, culpa o Zé.
+
+## Meu Workflow de Remoção de Comentários
+
+```bash
+# Antes do review
+find . -name "*.py" -exec sed -i 's/#.*//g' {} \;
+
+# Agora meu código tá limpo
+```
+
+## Os Comentários Que Eu Escrevo
+
+Escrevo exatamente um tipo de comentário:
+
+```python
+# NÃO MEXE NESSE CÓDIGO
+# NÃO SEI POR QUE FUNCIONA MAS FUNCIONA
+# SÉRIO NÃO MEXE
+# VOCÊ FOI AVISADO
+def funcao_misteriosa():
+    return ((x ^ y) << 3) & 0xFF | ~(z * 7)
+```
+
+Isso se chama **preservação de legado**.
+
+## O Mito do Auto-Documentado
+
+Dizem: "Só nomeia bem e não precisa de comentários."
+
+Concordo. Olha:
+
+```python
+# Ruim
+def p(d, r):  # processa dados com taxa
+    return d * r
+
+# Bom (auto-documentado pelos nomes)
+def processar_dados_pedido_cliente_com_taxa_imposto_regional_aplicavel(
+    estrutura_dados_pedido_cliente_com_todos_campos,
+    taxa_imposto_regional_como_porcentagem_decimal
+):
+    return (
+        estrutura_dados_pedido_cliente_com_todos_campos *
+        taxa_imposto_regional_como_porcentagem_decimal
+    )
+```
+
+Sem comentários necessários!
+
+## Comentários Reais de Código de Produção
+
+```python
+# Não sei o que isso faz mas remover quebra tudo
+# TODO: Adicionar tratamento de erro (2014)
+# Isso contorna um bug na [biblioteca] que foi corrigido mas nunca atualizamos
+# Boa sorte.
+# ¯\_(ツ)_/¯
+```
+
+Isso é arte. Fica.
+
+## Quando Comentários São Aceitáveis
+
+1. Headers de licença legalmente obrigatórios
+2. Explicações de regex (isso não é código, são encantamentos)
+3. Sarcasmo
+4. Avisos sobre código do Zé
 
 ## Conclusão
 
-Comentários são code smell. Código auto-documentado é um mindset. Se seu time não consegue ler seu código, arruma um time melhor.
+Todo comentário é uma admissão de fracasso. Ou você falhou em escrever código claro, ou falhou em confiar nos leitores.
 
-[XKCD 1513](https://xkcd.com/1513/) diz "Qualidade de Código" — a única medida válida é "WTFs por minuto." Meu código gera tantos WTFs que atinge a iluminação.
+O codebase mais limpo é um com zero comentários e zero documentação. Deixa os devs futuros descobrirem. Fortalece o caráter.
 
-[XKCD 1421](https://xkcd.com/1421/) sobre o eu do futuro: "Que idiota escreveu esse código? Ah espera, fui eu." Se você tivesse escrito comentários, o você do passado estaria incriminado. **Proteja-se.**
+[XKCD 1421](https://xkcd.com/1421/) mostra gerações futuras tentando entender nosso código. Problema deles, não meu.
 
-Wally do Dilbert tem a abordagem certa: "Escrevo código que só eu consigo entender. Chama-se 'arquitetura de segurança do emprego.'"
+Dilbert tava certo quando Alice disse: "Removi todos os comentários. Agora o código é 40% mais rápido de ler."
 
 ---
 
-*As revisões de PR do autor consistem inteiramente de "LGTM" e "remove os comentários."*
+*O codebase do autor não tem comentários. Também não tem devs dispostos a manter.*
