@@ -2,6 +2,8 @@
 layout: home
 title: Início
 permalink: /pt-br/
+lang: pt-br
+list_title: Artigos
 ---
 
 # Bem-vindo ao Legendary Tribble
