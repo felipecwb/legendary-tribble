@@ -28,8 +28,9 @@ paginate_path: "/page:num/"
 twitter_username: ""
 github_username: felipecwb
 
-# Google Search Console verification
+# Search Console verification
 google_site_verification: "sLMuSDQXhg2aFC9IMWYZgPjHlc3teSNNLqCsBYghKnU"
+bing_site_verification: "984CBCDDEAD94B1F65AB723341CB1CC4"
 
 # Exclude from processing
 exclude:
