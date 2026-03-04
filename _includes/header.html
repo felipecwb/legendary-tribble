@@ -2,12 +2,6 @@
   <div class="wrapper">
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
-    <div class="lang-switch">
-      <button id="theme-toggle" title="Toggle dark/light mode">🌙</button>
-      <a href="{{ '/' | relative_url }}" title="English">🇺🇸</a>
-      <a href="{{ '/pt-br/' | relative_url }}" title="Português">🇧🇷</a>
-    </div>
-
     {%- assign page_paths = site.header_pages | default: blank -%}
     {%- if page_paths -%}
       <nav class="site-nav">
@@ -32,3 +26,30 @@
     {%- endif -%}
   </div>
 </header>
+
+<!-- Fixed position controls -->
+<div class="lang-switch">
+  <a href="{{ '/' | relative_url }}" title="English">🇺🇸</a>
+  <a href="{{ '/pt-br/' | relative_url }}" title="Português">🇧🇷</a>
+</div>
+
+<button class="theme-toggle" id="theme-toggle" title="Toggle dark/light mode" onclick="toggleTheme()">
+  🌙
+</button>
+
+<script>
+function toggleTheme() {
+  var current = document.documentElement.getAttribute('data-theme');
+  var next = current === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+  document.getElementById('theme-toggle').textContent = next === 'dark' ? '☀️' : '🌙';
+}
+
+// Set initial icon
+(function() {
+  var theme = document.documentElement.getAttribute('data-theme') || 'light';
+  var btn = document.getElementById('theme-toggle');
+  if (btn) btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+})();
+</script>

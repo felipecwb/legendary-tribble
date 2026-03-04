@@ -1,44 +1,58 @@
+<script>
+// Run immediately to prevent flash
+(function() {
+  var saved = localStorage.getItem('theme');
+  var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  var theme = saved || (prefersDark ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', theme);
+})();
+</script>
+
 <style>
-.lang-switch {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  font-size: 1.2em;
-}
-.lang-switch a, .lang-switch button {
-  text-decoration: none;
-  margin: 0 5px;
-  background: none;
-  border: none;
+/* Theme toggle button - top right fixed */
+.theme-toggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 1000;
+  background: var(--minima-background-color, #fff);
+  border: 2px solid var(--minima-border-color, #e8e8e8);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
   cursor: pointer;
-  font-size: 1em;
-  padding: 0;
+  font-size: 1.4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: transform 0.2s;
 }
-@media (max-width: 600px) {
-  .lang-switch {
-    position: relative;
-    right: 0;
-    top: 0;
-    text-align: center;
-    margin-bottom: 10px;
-  }
+.theme-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* Language switch */
+.lang-switch {
+  position: fixed;
+  top: 15px;
+  right: 70px;
+  z-index: 1000;
+  font-size: 1.2em;
+  background: var(--minima-background-color, #fff);
+  border: 2px solid var(--minima-border-color, #e8e8e8);
+  border-radius: 20px;
+  padding: 5px 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.lang-switch a {
+  text-decoration: none;
+  margin: 0 3px;
 }
 
 /* Dark mode styles */
 html[data-theme="dark"] {
-  --minima-brand-color: #79b8ff;
-  --minima-brand-color-light: #79b8ff;
-  --minima-brand-color-dark: #79b8ff;
-  --minima-site-title-color: #79b8ff;
-  --minima-text-color: #c9d1d9;
-  --minima-background-color: #0d1117;
-  --minima-code-background-color: #161b22;
-  --minima-border-color: #30363d;
-  --minima-table-text-color: #c9d1d9;
-  --minima-table-zebra-color: #161b22;
-  --minima-table-header-bg-color: #21262d;
-  --minima-table-header-border: #30363d;
-  --minima-table-border-color: #30363d;
+  color-scheme: dark;
 }
 
 html[data-theme="dark"] body {
@@ -50,22 +64,38 @@ html[data-theme="dark"] a {
   color: #58a6ff;
 }
 
+html[data-theme="dark"] a:visited {
+  color: #8b949e;
+}
+
 html[data-theme="dark"] .site-header {
   background-color: #161b22;
   border-bottom-color: #30363d;
 }
 
+html[data-theme="dark"] .site-title, 
+html[data-theme="dark"] .site-title:visited {
+  color: #58a6ff;
+}
+
+html[data-theme="dark"] .site-nav .page-link {
+  color: #c9d1d9;
+}
+
 html[data-theme="dark"] .site-footer {
   background-color: #161b22;
   border-top-color: #30363d;
+  color: #8b949e;
 }
 
 html[data-theme="dark"] code {
   background-color: #161b22;
   border-color: #30363d;
+  color: #c9d1d9;
 }
 
-html[data-theme="dark"] pre, html[data-theme="dark"] pre.highlight {
+html[data-theme="dark"] pre, 
+html[data-theme="dark"] pre.highlight {
   background-color: #161b22;
   border-color: #30363d;
 }
@@ -74,9 +104,19 @@ html[data-theme="dark"] .post-meta {
   color: #8b949e;
 }
 
+html[data-theme="dark"] .post-link {
+  color: #58a6ff;
+}
+
+html[data-theme="dark"] h1, html[data-theme="dark"] h2, 
+html[data-theme="dark"] h3, html[data-theme="dark"] h4 {
+  color: #c9d1d9;
+}
+
 html[data-theme="dark"] table th {
   background-color: #21262d;
   border-color: #30363d;
+  color: #c9d1d9;
 }
 
 html[data-theme="dark"] table td {
@@ -86,41 +126,35 @@ html[data-theme="dark"] table td {
 html[data-theme="dark"] table tr:nth-child(even) {
   background-color: #161b22;
 }
-</style>
 
-<script>
-(function() {
-  const toggle = () => {
-    const current = document.documentElement.getAttribute('data-theme');
-    const next = current === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', next);
-    localStorage.setItem('theme', next);
-    updateIcon(next);
-  };
+html[data-theme="dark"] blockquote {
+  color: #8b949e;
+  border-left-color: #30363d;
+}
 
-  const updateIcon = (theme) => {
-    const btn = document.getElementById('theme-toggle');
-    if (btn) btn.textContent = theme === 'dark' ? '☀️' : '🌙';
-  };
+html[data-theme="dark"] .theme-toggle,
+html[data-theme="dark"] .lang-switch {
+  background: #161b22;
+  border-color: #30363d;
+}
 
-  const init = () => {
-    const saved = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const theme = saved || (prefersDark ? 'dark' : 'light');
-    document.documentElement.setAttribute('data-theme', theme);
-    updateIcon(theme);
-    
-    const btn = document.getElementById('theme-toggle');
-    if (btn) btn.addEventListener('click', toggle);
-  };
+html[data-theme="dark"] hr {
+  border-color: #30363d;
+}
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
+@media (max-width: 600px) {
+  .theme-toggle {
+    top: 10px;
+    right: 10px;
+    width: 38px;
+    height: 38px;
+    font-size: 1.2em;
   }
-  
-  // Also run on page load to ensure icon is set
-  window.addEventListener('load', init);
-})();
-</script>
+  .lang-switch {
+    top: 10px;
+    right: 55px;
+    font-size: 1em;
+    padding: 4px 8px;
+  }
+}
+</style>
