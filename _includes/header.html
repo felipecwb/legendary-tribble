@@ -1,20 +1,3 @@
-<script>
-function toggleTheme() {
-  var html = document.documentElement;
-  var isDark = html.classList.contains('dark');
-  if (isDark) {
-    html.classList.remove('dark');
-    localStorage.setItem('theme', 'light');
-    document.getElementById('theme-toggle-btn').textContent = '🌙';
-  } else {
-    html.classList.add('dark');
-    localStorage.setItem('theme', 'dark');
-    document.getElementById('theme-toggle-btn').textContent = '☀️';
-  }
-  return false;
-}
-</script>
-
 <header class="site-header">
   <div class="wrapper" style="display: flex; justify-content: space-between; align-items: center;">
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
@@ -22,15 +5,12 @@ function toggleTheme() {
     <div style="display: flex; align-items: center; gap: 12px;">
       <a href="{{ '/' | relative_url }}" title="English" style="text-decoration: none; font-size: 1.3em;">🇺🇸</a>
       <a href="{{ '/pt-br/' | relative_url }}" title="Português" style="text-decoration: none; font-size: 1.3em;">🇧🇷</a>
-      <button type="button" id="theme-toggle-btn" onclick="toggleTheme(); return false;" style="width: 36px; height: 36px; border-radius: 50%; border: 1px solid #ccc; background: transparent; cursor: pointer; font-size: 1.2em; padding: 0; line-height: 1;">🌙</button>
+      <button type="button" id="theme-toggle-btn" style="width: 36px; height: 36px; border-radius: 50%; border: 1px solid #ccc; background: transparent; cursor: pointer; font-size: 1.2em; padding: 0; line-height: 1;"
+        onclick="var h=document.documentElement;var d=h.classList.toggle('dark');localStorage.setItem('theme',d?'dark':'light');this.textContent=d?'☀️':'🌙';">🌙</button>
     </div>
   </div>
 </header>
 
 <script>
-(function() {
-  var isDark = document.documentElement.classList.contains('dark');
-  var btn = document.getElementById('theme-toggle-btn');
-  if (btn) btn.textContent = isDark ? '☀️' : '🌙';
-})();
+document.getElementById('theme-toggle-btn').textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
 </script>
