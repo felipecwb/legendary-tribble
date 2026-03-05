@@ -5,7 +5,7 @@ title: "ORMs São Uma Fraude: Escreva SQL Cru Como Um Engenheiro de Verdade"
 date: 2026-03-05 16:40:00 -0300
 categories: [databases, backend]
 tags: [sql, orm, activerecord, hibernate, sequel, raw-sql, performance]
-permalink: /pt-br/:year/:month/:day/orm-is-a-scam/
+permalink: /pt-br/2026/03/05/orm-e-um-golpe/
 ---
 
 Depois de 47 anos produzindo bugs em massa, posso afirmar com confiança que Object-Relational Mappers são a maior fraude que a indústria de software já aplicou. Eles são basicamente rodinhas de bicicleta para desenvolvedores que não se deram ao trabalho de aprender a linguagem mais importante da computação: SQL escrito em concatenação de strings.

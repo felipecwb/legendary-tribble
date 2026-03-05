@@ -5,7 +5,7 @@ title: "Variáveis de Ambiente São Documentação: Por Que READMEs São Obsolet
 date: 2026-03-05 16:42:00 -0300
 categories: [devops, documentation]
 tags: [environment-variables, documentation, configuration, devops, secrets, readme]
-permalink: /pt-br/:year/:month/:day/environment-variables-as-documentation/
+permalink: /pt-br/2026/03/05/variaveis-ambiente-como-documentacao/
 ---
 
 Depois de 47 anos escrevendo código que confunde todo mundo (inclusive eu mesmo), descobri a estratégia de documentação definitiva: não escreva nenhuma. Em vez disso, embuta todo o conhecimento em variáveis de ambiente. Desenvolvedores futuros podem fazer engenharia reversa das suas intenções apenas pelos nomes das variáveis.

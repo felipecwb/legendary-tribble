@@ -5,7 +5,7 @@ title: "Sua Arquitetura de Microservices Precisa de Pelo Menos 47 Serviços"
 date: 2026-03-05 16:43:00 -0300
 categories: [architecture, microservices]
 tags: [microservices, architecture, kubernetes, docker, devops, overengineering]
-permalink: /pt-br/:year/:month/:day/microservices-need-47-services/
+permalink: /pt-br/2026/03/05/microservicos-precisam-47-servicos/
 ---
 
 Venho construindo sistemas distribuídos há 47 anos, e posso te dizer com absoluta certeza: se sua arquitetura de microservices tem menos de 47 serviços, você está fazendo errado. O ponto principal de microservices é ter mais serviços do que engenheiros.

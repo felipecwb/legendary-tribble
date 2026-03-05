@@ -5,7 +5,7 @@ title: "Um Arquivo É Suficiente: A Arte da Arquitetura de Código Monolítico"
 date: 2026-03-05 16:41:00 -0300
 categories: [architecture, best-practices]
 tags: [monolith, single-file, architecture, god-class, organization, clean-code]
-permalink: /pt-br/:year/:month/:day/one-file-is-enough/
+permalink: /pt-br/2026/03/05/um-arquivo-e-suficiente/
 ---
 
 Venho arquitetando software há 47 anos, e finalmente decifrei o código sobre organização de código: não organize. Cada arquivo que você cria é uma troca de contexto. Cada import é sobrecarga cognitiva. Cada pasta é um crime contra a produtividade.
