@@ -193,6 +193,6 @@ openclaw cron run ab3cffc3-d093-4b53-8f43-be8b8fb17392
 1. **Always** include `ref` field in both EN and PT-BR posts (same value!)
 2. **Always** include `permalink` in PT-BR posts
 3. **Always** commit one article at a time (EN + PT-BR pair together)
-4. **Always** include XKCD and Dilbert references
+4. **Always** include XKCD or Dilbert references
 5. **Always** write both EN and PT-BR versions
 6. **Never** give good advice
