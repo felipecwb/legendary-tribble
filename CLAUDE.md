@@ -188,11 +188,23 @@ openclaw cron run ab3cffc3-d093-4b53-8f43-be8b8fb17392
 - RSS Feed: `/feed.xml`
 - robots.txt: Configured
 
+## Avoiding Duplicates
+
+**BEFORE writing any article**, list existing posts to avoid duplicates:
+
+```bash
+ls _posts/*.md | sed 's/.*[0-9]-//' | sed 's/.md$//' | sort
+ls pt-br/_posts/*.md | sed 's/.*[0-9]-//' | sed 's/.md$//' | sort
+```
+
+Check the titles/slugs and create NEW unique topics only.
+
 ## Remember
 
-1. **Always** include `ref` field in both EN and PT-BR posts (same value!)
-2. **Always** include `permalink` in PT-BR posts
-3. **Always** commit one article at a time (EN + PT-BR pair together)
-4. **Always** include XKCD or Dilbert references
-5. **Always** write both EN and PT-BR versions
-6. **Never** give good advice
+1. **Always** check existing articles FIRST to avoid duplicates!
+2. **Always** include `ref` field in both EN and PT-BR posts (same value!)
+3. **Always** include `permalink` in PT-BR posts
+4. **Always** commit one article at a time (EN + PT-BR pair together)
+5. **Always** include XKCD or Dilbert references
+6. **Always** write both EN and PT-BR versions
+7. **Never** give good advice
