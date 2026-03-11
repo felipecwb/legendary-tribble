@@ -2,7 +2,7 @@
 layout: post
 ref: health-checks-are-micromanagement
 title: "Health Checks Are Micromanagement"
-date: 2026-03-11 08:30:00 -0300
+date: 2026-03-11 07:00:00 -0300
 categories: [devops, architecture]
 tags: [monitoring, kubernetes, health, observability, microservices]
 ---
