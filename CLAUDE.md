@@ -40,13 +40,15 @@ Save to: `_posts/YYYY-MM-DD-slug-name.md`
 layout: post
 ref: slug-name
 title: "Your Terrible Title Here"
-date: YYYY-MM-DD HH:MM:SS -0300
+date: YYYY-MM-DD 00:00:00 -0300
 categories: [category1, category2]
 tags: [tag1, tag2, tag3, ...]
 ---
 
 Article content here...
 ```
+
+**⚠️ IMPORTANT:** Always use `00:00:00 -0300` for the time! GitHub Actions runs in UTC, so times like `08:30 -0300` (= 11:30 UTC) might be "in the future" at build time and Jekyll will skip the post.
 
 ### Portuguese Article Template
 
@@ -61,7 +63,7 @@ Save to: `pt-br/_posts/YYYY-MM-DD-slug-name.md`
 layout: post
 ref: slug-name
 title: "Seu Título Terrível Aqui"
-date: YYYY-MM-DD HH:MM:SS -0300
+date: YYYY-MM-DD 00:00:00 -0300
 categories: [categoria1, categoria2]
 tags: [tag1, tag2, tag3, ...]
 permalink: /pt-br/:year/:month/:day/slug-name-pt/
